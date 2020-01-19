@@ -67,14 +67,42 @@
     </main>
         <div id="mapid"></div>
         <script >
-           var mymap = L.map('mapid').setView([51.505, -0.09], 13);
+           var mymap = L.map('mapid').setView([12.92, 77.66], 13);
         L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
     attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
     maxZoom: 18,
     id: 'mapbox/streets-v11',
     accessToken: 'pk.eyJ1IjoiZ3JvdzIwIiwiYSI6ImNrNWtjcGF0NjBjcDIzaXBneHA0YWlnOXgifQ.uhYQWM2B7srNQpyG02YyOw'
 }).addTo(mymap);
+
         var marker = L.marker([51.5, -0.09]).addTo(mymap);
+
+        var circle = L.circle([12.92, 77.665], 
+          {
+            color: 'red',
+            fillColor: '#f03',
+            fillOpacity: 0.5,
+            radius: 50
+          }
+        ).addTo(mymap);
+        
+        var circle = L.circle([12.924203, 77.649969], 
+          {
+            color: 'red',
+            fillColor: '#f03',
+            fillOpacity: 0.5,
+            radius: 50
+          }
+        ).addTo(mymap);
+       
+        var circle = L.circle([12.907161, 77.695528], 
+          {
+            color: 'red',
+            fillColor: '#f03',
+            fillOpacity: 0.5,
+            radius: 50
+          }
+        ).addTo(mymap);
 </script>
     {% include 'base/js.html' %}
     <script>
