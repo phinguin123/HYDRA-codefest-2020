@@ -1,2 +1,0 @@
-# HYDRA
-Codefest Oakridge
